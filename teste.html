@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+   <!-- site metas -->
+   <title>LoveScript</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+   </div>
+   <!-- end loader -->
+   <!-- header -->
+   <div class="header">
+      <div class="container-fluid">
+         <div class="row d_flex">
+            <div class=" col-md-2 col-sm-3 col logo_section">
+               <div class="full">
+                  <div class="center-desk">
+                     <div class="logo">
+                        <a href="index.html"><ion-icon name="heart-empty" size="large"></ion-icon>LoveScript</a>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div> 
+            <div class="col-md-10 col-sm-12">
+               <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                     aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarsExample04">
+                     <ul class="navbar-nav mr-auto">
+                           <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="teste.html">Como você se sente amado? </a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="teste2.html">Como você expressa amor? </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                              aria-expanded="false">
+                              As 5 linguagens
+                           </a>
+                           <div class="dropdown-menu">
+                              <a class="dropdown-item" href="palavra_afirmacao.html">Palavras de Afirmação</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="tempoQualidade.html">Tempo De Qualidade</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="presente.html">Presentes</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="atosDeServico.html">Atos de Serviço</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="toqueFisico.html">Toque Fisico</a>
+
+                           </div>
+                        </li>
+
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end header inner -->
+   <!-- end header -->
+   <!-- top -->
+
+   <!-- end banner -->
+   <!-- our class -->
+   <div class="class">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage text_align_center">
+                  <h2>As 5 cinco linguagens do Amor</h2>
+                  <p>Nos grupos abaixo, avalie cada frase com uma nota de 1 a 5, de acordo com o que você poderia fazer
+                     para demonstrar mais apreço ou carinho pelo seu colega(Amigo/Namorado). O número 5 representa o que
+                     você mais teria probabilidade de fazer, o número 1 representa o que você menos estaria apto a fazer
+                     em cada grupo. Sendo assim nenhum grupo individual pode ter o mesmo número repetido.</p>
+
+               </div>
+            </div>
+         </div>
+
+         <!-- end our class -->
+         <!-- about -->
+         <div class="about">
+            <div class="container-fluid">
+               <div class="row d_flex">
+                  <div class="about_img text_align_left">
+                     <form id="quizForm">
+                        <div class="question" data-question="1">
+                           <h3><a>Grupo 1</a></h3>
+                           <label>
+                              A- Quando você é reconhecido e elogiado por um trabalho feito por você, exemplo: Meus
+                              parabéns, seu trabalho está bom.
+                              <select type="number" name="q1o1" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              B- Seu amigo(a) busca fazer alguma tarefa ou atividade, tanto no ambiente em que você
+                              trabalha ou estuda para te deixar feliz ou te agradar.
+                              <select name="q1o2" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              C- Seu amigo(a) busca trazer um presente especial para você.
+                              <select name="q1o3" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              D- Seu amigo(a) te convida para dar um passeio durante a noite para conversar e colocar o
+                              assunto em dia.
+                              <select name="q1o4" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              E- Seu amigo(a) busca fazer um esforço, toda vez que você sai do trabalho ou do campus.
+                              <select name="q1o5" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                        </div>
+                        <!-- Adicione as outras 4 perguntas aqui de maneira similar -->
+                        <div class="question" data-question="2">
+                           <h3><a>Grupo 2</a></h3>
+                           <label>
+                              A- Seu amigo diz pra você o quando você é especial para ele.
+                              <select name="q2o1" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              B- Seu amigo(a) ou namorado(a) faz alguma tarefa do dia a dia que você não gosta de
+                              fazer para te encorajar a descansar.<select name="q2o2" required
+                                 onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              C- Seu amigo(a) ou namorado(a) faz uma surpresa para você fazendo sua comida favorita.
+                              <select name="q2o3" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+
+                           <label>
+                              D- Seu amigos(a) te convidam para uma confraternização entre amigos(a).
+                              <select name="q2o4" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              E- Seu amigo(a) ou namorado(a) gosta de receber abraços seus quando você está apenas
+                              passando por ele no campus ou trabalho
+                              <select name="q2o5" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                        </div>
+                        <div class="question" data-question="3">
+                           <h3><a>Grupo 3</a></h3>
+                           <label>
+                              A- Durante uma festa, seu amigo compartilha com as pessoas sobre um presente que você
+                              recebeu recentemente e sobre o sucesso que aquele presente fez.
+                              <select name="q3o1" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              B- Seu amigo te dá uma carona no carro dele até a sua casa ou levar outra bicicleta para
+                              você vir para o campus fora a bicicleta dele.
+                              <select name="q3o2" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              C- Seu amigo(a) ou namorado(a) surpreende você com um presente especial.
+                              <select name="q3o3" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              D- Seu amigo(a) ou namorado(a) convida você para dar um passeio à tarde.
+                              <select name="q3o4" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              E- Seu namorado(a) ou amigo(a) anda de braços dados com você quando você está passeando no
+                              shopping ou praça da sua cidade.
+                              <select name="q3o5" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                        </div>
+                        <div class="question" data-question="4">
+                           <h3><a>Grupo 4</a></h3>
+                           <label>
+                              A- Seus amigos(a) te elogiam pelas suas qualidades especiais como simpático, inteligente,
+                              bondoso, esperto.
+                              <select name="q4o1" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              B- Seu amigo(a) prepara um lanche e leva para você no campus ou no ambiente em que você
+                              está.
+                              <select name="q4o2" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              C-Seu namorado ou amigo(a), que te sustenta por completo, que paga academia(ou cursinho)
+                              por 2 meses para você.
+                              <select name="q4o3" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              D- Seu amigo ou namorado(a) planeja uma saída legal para você.
+                              <select name="q4o4" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              E- Seu amigo(a) te dá uma carona e te poupa de ter que pegar o ônibus lotado ou ir de
+                              bicicleta ou a pé até uma certa distância longe.
+                              <select name="q4o5" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                        </div>
+                        <div class="question" data-question="5">
+                           <h3><a>Grupo 5</a></h3>
+                           <label>
+                              A- Seu amigo(a) diz para você o quanto você é uma pessoa importante na vida deles
+                              <select name="q5o1" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              B- Seu amigo(a) preenche para você aquele relatório(atividade) complicada que você odeia
+                              fazer.
+                              <select name="q5o2" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+
+                              C- Seu amigo ou namorado(a) manda entregar na sua casa um presente surpresa.
+                              <select name="q5o3" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+
+                           </label>
+                           <label>
+                              D- Seu amigo ou namorado(a) convida você para almoçar, te leva para o seu restaurante
+                              favorito e paga a conta
+                              <select name="q5o4" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                           <label>
+                              E- Seu amigo ou namorado(a) faz uma massagem nos seus ombros.
+                              <select name="q5o5" required onchange="verificaDuplicatas(event)">
+                                 <option value="0"></option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                                 <option value="5">5</option>
+                              </select>
+                           </label>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar</button>
+                     </form>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end about -->
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>© 2020 All Rights Reserved. Design by <a href="https://html.design/"> Free html Templates</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="js/custom.js"></script>
+   <script>
+      AOS.init();
+   </script>
+   <script src="js/funcoes.js"></script>
+   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
