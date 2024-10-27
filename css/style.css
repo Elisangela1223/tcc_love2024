@@ -1108,5 +1108,12 @@ ul.social_icon li a:hover {
      opacity: 1;
 }
 
+.imagem_autor {
+     height: 300px;
+     border-radius: 50%;
+     width: 300px !important;
+     object-fit: cover;
 
+ 
+ }
 /** end contact **/
