@@ -1115,8 +1115,6 @@ ul.social_icon li a:hover {
      object-fit: cover;
      margin-top: -20px;
      transform: translateY(-25px);
-
- 
  }
  
  .meu-botao {
@@ -1153,5 +1151,12 @@ ul.social_icon li a:hover {
  .sobre_autor:hover {
      color: #ff1493;
  }
- 
- 
+ .titlepage_inicio {
+     background-color: #f075b2;
+     padding: 20px; 
+     border-radius: 5px; 
+     color: white; 
+ }
+ h2 {
+     color: white; /* Cor do texto branca */
+ }
